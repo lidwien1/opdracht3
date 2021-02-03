@@ -1,0 +1,137 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    text-align:center;
+    font-size: 3em;
+}
+.carousel {
+    position: relative;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Contaier van lijst met films */
+.carousel_container{
+    height: 100%;
+    position: relative;   
+    overflow: hidden;
+}
+
+/* Lijst met films */
+.carousel_track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+/* Een film */
+.carousel_slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/*
+.carousel_slide:nth-of-type(odd) {
+	background:lightgrey;
+}
+
+.carousel_slide:nth-of-type(even) {
+	background:lightgrey;
+}
+*/
+
+.carousel_slide h2 {
+	text-align:center;
+    color: white;
+}
+
+.carousel_slide img{
+    width: auto;
+    height: 78%;
+}
+
+.carousel_slide ul {
+	margin:0;
+	list-style:none;
+	display:flex;
+	justify-content:center;
+	padding: 5px 0;
+}
+
+.carousel_slide ul li {
+	width:3em; height:3em;
+	 margin:0 5px;
+	background-color:gold;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	-webkit-clip-path:polygon(50% 0, 61.2% 34.5%, 97.6% 34.5%, 68.2% 55.9%, 79.4% 90.4%, 50% 69%, 20.6% 90.4%, 31.8% 55.9%, 2.4% 34.5%, 38.8% 34.5%, 50% 0);
+   clip-path:polygon(50% 0, 61.2% 34.5%, 97.6% 34.5%, 68.2% 55.9%, 79.4% 90.4%, 50% 69%, 20.6% 90.4%, 31.8% 55.9%, 2.4% 34.5%, 38.8% 34.5%, 50% 0);
+}
+
+/* Buttons */
+.carousel_button{
+     position: absolute;
+    width: 50px;
+    height: 50px;
+	 top: 50%;
+    transform: translateY(-50%);
+	 cursor: pointer;
+	 border: none;
+    /* beide buttons boven films liggen */
+    z-index: 10;
+}
+
+.carousel_button--left{
+    left: 300px;
+    color: white;
+    background-color: black;
+}
+
+.carousel_button--right{
+    right: 300px;
+    color: white;
+    background-color: black;
+}
+
+/* Bolletjes */
+.carousel_nav{
+    display: flex;
+    justify-content: center;
+    padding 10px 0;
+    color: white;
+}
+.carousel_indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: white;;
+    margin: 15 10px;
+    cursor: pointer;
+}
+
+.carousel_indicator.current-slide {
+    background: grey;
+    color: white;
+}
+
+/* Bron: https://www.youtube.com/watch?v=VYsVOamdB0g&t=522s*/
+
+
+
+
+
+
